@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset = "utf-8" /> 
+    <meta name = "author" content = "Kevin Lin">
+    <meta name = "keywords" content = "Blue Monkey Tea, Pittsburgh, Kevin Lin">
+    <meta name = "description" content = "Blue Monkey Tea Pittsburgh Website">
+    
+    <link rel = "shortcut icon" href = "images/logo1.png" type = "image/x-icon"/>
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css"/>
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css"/>
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery.lightbox.css">
+
+    <script src = "js/jquery-3.4.1.min.js"></script>
+    <script src = "js/scripts.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+    <script src = "js/jquery.lightbox.min.js"></script>
+
+    <!-- required javascript features (lightbox and accordion) -->
+    <script type = "text/Javascript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
+
+    <title> Blue Monkey Tea Pittsburgh </title>
+</head>
+
+<body>
+
+    <!-- static header with navigation bar -->
+    <div id = "top">
+        <header> 
+            <h1> 
+                BLUE MONKEY TEA
+                <img src = "images/logo1.png" class = "icon" alt = "Logo" /> 
+            </h1>
+        </header>
+        <nav>
+            <a href = "index.html"> HOME </a>
+            <a href = "about.html"> ABOUT </a>
+            <a href = "menu.html" class = "selected"> MENU </a>
+            <a href = "contact.html"> CONTACT </a>
+        </nav>
+    </div>
+
+    <!-- https://bigflagtea.com/blogs/news/everything-you-could-possibly-want-to-know-about-green-tea-and-we-mean-everything -->
+    <img src = "images/bluemonkey_cover3.png" class = "center" alt = "Store photo" />
+
+    <!-- grid layout -->
+    <div class="grid-container">
+
+    <!-- top grid item -->
+    <div class="grid-item item1">
+        <h1>
+            BLUE MONKEY TEA
+        </h1>
+        <h3>
+            OUR PRODUCTS
+        </h3>
+        <!-- social media links -->
+        <a href = "https://www.pinterest.com/teapittsburgh/tea-pittsburgh-blue-monkey-tea/" target="_blank">
+            <img src = "images/pinterest.png" class = "icon" alt = "Pinterest" />
+        </a>
+        <a href = "https://www.facebook.com/TeaPittsburgh" target="_blank">
+            <img src = "images/fb.png" class = "icon" alt = "Facebook" />
+        </a>
+        <a href = "https://www.youtube.com/watch?v=aUntXEBgfHw" target="_blank">
+            <img src = "images/yt.png" class = "icon" alt = "YouTube" />
+        </a>
+        <a href = "https://teapittsburgh.wordpress.com/" target="_blank">
+            <img src = "images/wp.png" class = "icon" alt = "Wordpress" />
+        </a>
+        <a href = "https://www.yelp.com/biz/blue-monkey-tea-pittsburgh-pittsburgh" target="_blank">
+            <img src = "images/yelp.png" class = "icon" alt = "Yelp" />
+        </a>
+    </div>
+
+    <!-- filler text -->
+    <div class="grid-item item5">
+        <h3> IMPORTANT ANNOUNCEMENT </h3>
+        <p>
+        Due to a series of misplaced orders last month, Blue Monkey Tea has 
+        decided to remove the online ordering feature from our website until
+        technical assistance is received. <br> For now, please feel free to check out 
+        our amazing selection below and try our tea in person! 
+        </p>
+    </div>
+
+    <!-- grid incorporating accordion, lightbox, and lists -->
+    <div class="grid-item item5">
+        <h3> POPULAR CLASSICS </h3>
+        <p>
+            <div id = "accordion">
+                <!-- each h3 tag was modified after user testing -->
+                <h3> 
+                    LOOSE-LEAF TEAS
+                    <img src = "images/tea_icon.png" alt = "Tea icon" class = "icon"/>
+                </h3>
+                <div><p>
+                    Choose your favorite teas from the selection below. We have over 300 loose leaf teas, herbs, and spices too! <br>
+                    Some of our most popular options are listed here in alphabetical order. <b>Click on each image to learn more.</b> 
+                    <div id = "content-gallery"> <div id = "gallery">
+                    <table>
+                        <tr> 
+                            <div id = "galleryThumbnail1"> <div id = "thmbnlShadow1">
+                                <th class = "text-center">
+                                    <a href = "images/loose_black.png" title = "Our loose black tea collection comes in a variety of 
+                                    flavored options (all under $5) and unflavored options (prices vary)." >
+                                    <img src = "images/loose_black_thumb.png" class = "thumb" alt = "Loose black" /></a>
+                                    <br> BLACK 
+                                </th> 
+                            </div>
+                            <div id = "galleryThumbnail2"> <div id = "thmbnlShadow2">
+                                <th class = "text-center">
+                                    <a href = "images/loose_green.png" title = "Our loose green tea collection includes
+                                    non-flavored, flavored, jasmine, and specialty rare green teas. With the exception 
+                                    of a few specialty rare options, our green teas are all between $5 and $15." >
+                                    <img src = "images/loose_green_thumb.png" class = "thumb" alt = "Loose green" /></a>
+                                    <br> GREEN 
+                                </th> 
+                            </div>
+                            <div id = "galleryThumbnail3"> <div id = "thmbnlShadow3">
+                                <th class = "text-center">
+                                    <a href = "images/loose_oolong.png" title = "Our loose oolong tea collection includes a
+                                    variety of samples from Asia. All samples are between $5 and $15." >
+                                    <img src = "images/loose_oolong_thumb.png" class = "thumb" alt = "Loose oolong" /></a>
+                                    <br> OOLONG 
+                                </th> 
+                            </div>
+                            <div id = "galleryThumbnail4"> <div id = "thmbnlShadow4">
+                                <th class = "text-center">
+                                    <a href = "images/loose_red.png" title = "Our loose red tea collection includes a
+                                    variety of samples from Europe. All samples are less than $5." >
+                                    <img src = "images/loose_red_thumb.png" class = "thumb" alt = "Loose red" /></a>
+                                    <br> RED 
+                                </th> 
+                            </div>
+                            <div id = "galleryThumbnail5"> <div id = "thmbnlShadow5">
+                                <th class = "text-center">
+                                    <a href = "images/loose_white.png" title = "Our loose white tea collection includes a
+                                    variety of fruity tea samples generally priced between $5 and $10." >
+                                    <img src = "images/loose_white_thumb.png" class = "thumb" alt = "Loose white" /></a>
+                                    <br> WHITE
+                                </th> 
+                            </div>
+                            <div id = "galleryThumbnail6"> <div id = "thmbnlShadow6">
+                                <th class = "text-center">
+                                    <a href = "images/loose_yellow.png" title = "At this moment, we only have the organic sparrow 
+                                    tongue yellow tea, priced at $9.99." >
+                                    <img src = "images/loose_yellow_thumb.png" class = "thumb" alt = "Loose yellow" /></a>
+                                    <br> YELLOW
+                                </th> 
+                            </div>
+                        </tr>
+                    </table>
+                    </div></div>
+                </p></div>
+
+                <h3> 
+                    GOURMET COFFEES 
+                    <img src = "images/coffee_icon.png" alt = "Coffee icon" class = "icon"/>
+                </h3>
+                <div><p>
+                    <b>Allergen alert:</b> These products are made in manufacturing facilities that uses nut ingredients in some products.
+                    <br> Each of the following bags are 1lb.
+                    <table>
+                        <tr>
+                            <th> NON-FLAVORED </th>
+                            <th> FLAVORED </th>
+                            <th> DECAF </th>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <ul>
+                                    <li>Columbian Supremo ($12.99) </li>
+                                    <li>Kona Blend ($13.99)</li>
+                                    <li>Peruvian Organic Fair Trade ($15.99)</li>
+                                    <li>Sumatra Dark Blend ($12.99)</li>
+                                    <li>Espresso Roast ($12.99)</li>
+                                    <li>Rocket Fuel Extra Caffeine ($12.99)</li>
+                                </ul>
+                            </td>
+                            <td> 
+                                <ul>
+                                    <li>Amaretto ($12.99) </li>
+                                    <li>Butter Rum ($12.99)</li>
+                                    <li>Coconut Cream ($12.99)</li>
+                                    <li>Death By Chocolate ($13.99)</li>
+                                    <li>Hazeulnut Supreme ($12.99)</li>
+                                    <li>Irish Cream ($13.99)</li>
+                                    <li>Maple Walnut ($12.99) </li>
+                                    <li>Orange ($12.99) </li>
+                                    <li>Pumpkin Spice ($12.99) </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Columbian ($14.99)</li>
+                                    <li>Hazelnut ($14.99)</li>
+                                    <li>Pumpkin Spice ($14.99)</li>
+                                    <li>Death By Chocolate ($14.99)</li>
+                                    <li>Espresso ($14.99)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+
+            <h3> 
+                ST. PATRICK'S GIFTS 
+                <img src = "images/clover_icon.png" alt = "Clover icon" class = "icon"/>
+            </h3>
+                <div><p>
+                    Our teas and goodies for St. Patrick's Day have always been 
+                    quite popular. In case you're purchasing gifts on a tight budget,
+                    we have ranked our 5 cheapest St. Patrick's gifts for your
+                    convenience. 
+                    <br> Ties are broken by popularity, with the more popular option
+                    ranking higher.
+                    <ol>
+                        <li>Irish Breakfast, Loose Leaf Tea ($4.50) </li>
+                        <li>Irish Eyes, Loose Leaf Green Tea ($4.50) </li>
+                        <li>Shamrock Shortbread Cookies ($6.99) </li>
+                        <li>Irish Potatoes ($6.99) </li>
+                        <li>Irish Scone Mix ($7.99) </li>
+                    </ol>
+                </p>
+            </div>
+            </div>
+        </p>
+    </div>
+
+    <!-- filler text -->
+    <div class="grid-item item5">
+        <h3> FULL MENU </h3>
+        <p>
+        Our full list of available items and prices will be uploaded soon! If you
+        would like to be notified about this update, please let us 
+        know via <a href = "mailto:100teacups@gmail.com">email</a>.
+        </p>
+    </div>
+
+    </div>
+
+    <!-- footer for personal credits -->
+    <footer>
+        &copy; KEVIN LIN <br/>
+        <a href = "mailto:linkevin@cmu.edu"><img src = "images/email.png" 
+            alt = "Email Icon" class = "icon"></a>
+        <a href = "https://www.linkedin.com/in/lin-k/" target = "_blank"> <img
+            src = "images/linkedin.jpg" alt = "LinkedIn Logo" class = "icon"/> </a>
+        <a href = "https://github.com/lin-kevin" target = "_blank"> <img
+            src = "images/github.png" alt = "GitHub Logo" class = "icon"/> </a>
+    </footer>
+
+</body>
+
+</html>

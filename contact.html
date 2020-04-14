@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset = "utf-8" /> 
+    <meta name = "author" content = "Kevin Lin">
+    <meta name = "keywords" content = "Blue Monkey Tea, Pittsburgh, Kevin Lin">
+    <meta name = "description" content = "Blue Monkey Tea Pittsburgh Website">
+    
+    <link rel = "shortcut icon" href = "images/logo1.png" type = "image/x-icon"/>
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css"/>
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css"/>
+    <link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery.lightbox.css">
+
+    <script src = "js/jquery-3.4.1.min.js"></script>
+    <script src = "js/scripts.js"></script>
+    <script src = "js/jquery-ui.js"></script>
+    <script src = "js/jquery.lightbox.min.js"></script>
+
+    <!-- required Javascript feature (highcharts) -->
+    <script src = "http://code.highcharts.com/highcharts.js"></script>
+    <script src = "http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script>
+        $(function () {
+            $('#container-graph').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'POPULAR TIMES'
+            },
+            xAxis: {
+                categories: ['11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM']
+            },
+            yAxis: {
+                title: {
+                    text: 'Average Number of People Per Day'
+                }
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: 'MONDAY to SATURDAY',
+                data: [5, 10, 8, 24, 5, 7, 32, 16]
+            }, {
+                name: 'SUNDAY',
+                data: [0, 50, 48, 25, 28, 27, 0, 0]
+            }]
+            });
+        });
+    </script>
+
+    <title> Blue Monkey Tea Pittsburgh </title>
+</head>
+
+<body>
+
+    <!-- static header with navigation bar -->
+    <div id = "top">
+        <header> 
+            <h1> 
+                BLUE MONKEY TEA
+                <img src = "images/logo1.png" class = "icon" alt = "Logo" /> 
+            </h1>
+        </header>
+        <nav>
+            <a href = "index.html"> HOME </a>
+            <a href = "about.html"> ABOUT </a>
+            <a href = "menu.html"> MENU </a>
+            <a href = "contact.html" class = "selected"> CONTACT </a>
+        </nav>
+    </div>
+
+    <!-- https://bigflagtea.com/blogs/news/everything-you-could-possibly-want-to-know-about-green-tea-and-we-mean-everything -->
+    <img src = "images/bluemonkey_cover4.png" class = "center" alt = "Store photo" />
+
+    <!-- grid layout -->
+    <div class="grid-container">
+
+    <!-- top grid item -->
+    <div class="grid-item itemA">
+        <h1>
+            BLUE MONKEY TEA
+        </h1>
+        <h3>
+            REACHING OUT
+        </h3>
+        <!-- social media links -->
+        <a href = "https://www.pinterest.com/teapittsburgh/tea-pittsburgh-blue-monkey-tea/" target="_blank">
+            <img src = "images/pinterest.png" class = "icon" alt = "Pinterest" />
+        </a>
+        <a href = "https://www.facebook.com/TeaPittsburgh" target="_blank">
+            <img src = "images/fb.png" class = "icon" alt = "Facebook" />
+        </a>
+        <a href = "https://www.youtube.com/watch?v=aUntXEBgfHw" target="_blank">
+            <img src = "images/yt.png" class = "icon" alt = "YouTube" />
+        </a>
+        <a href = "https://teapittsburgh.wordpress.com/" target="_blank">
+            <img src = "images/wp.png" class = "icon" alt = "Wordpress" />
+        </a>
+        <a href = "https://www.yelp.com/biz/blue-monkey-tea-pittsburgh-pittsburgh" target="_blank">
+            <img src = "images/yelp.png" class = "icon" alt = "Yelp" />
+        </a>
+    </div>
+
+    <!-- contact information -->
+    <div class="grid-item itemB">
+        <h3> CONTACT INFORMATION </h3>
+        <table>
+            <tr> 
+                <th> ADDRESS </th>
+                <td> 5872 Forbes Ave <br>
+                    Pittsburgh, PA
+                    15217 </td>
+            </tr>
+            <tr>  
+                <th> PHONE </th>
+                <td> (412) 422-1606 </td>
+            </tr>
+            <tr>  
+                <th> EMAIL </th>
+                <td> <a href = "mailto:100teacups@gmail.com">100teacups@gmail.com</a></td>
+            </tr>
+            <tr>  
+                <th> WEBSITE </th>
+                <td> <a href = "https://www.pittsburghcuppa.com/" target = "_blank">pittsburghcuppa.com/</a></td>
+            </tr>
+            <tr>  
+                <th> PHOTO </th>
+                <td><img src = "images/photo.jpeg" alt = "Store photo"/></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- embedded map -->
+    <div class = "grid-item itemC">
+        <h3> LOCATION </h3>
+        <p> <b>NOTE:</b> Our other shop in Carnegie (South Hills) has closed. </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6900811123337!2d-79.92238568460343!3d40.43786097936267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f200108c553d%3A0xa62923c0d2116c57!2sTea%20Pittsburgh%20Blue%20Monkey%20Tea!5e0!3m2!1sen!2snl!4v1585928327015!5m2!1sen!2snl" width=100% height="380" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <!-- business hours -->
+    <div class = "grid-item itemE">
+        <h3> BUSINESS HOURS </h3>
+        <table>
+            <tr>
+                <th> MONDAY </th>
+                <td> 11AM to 7PM </td>
+            </tr>
+            <tr>
+                <th> TUESDAY </th>
+                <td> 11AM to 7PM </td>
+            </tr>
+            <tr>
+                <th> WEDNESDAY </th>
+                <td> 11AM to 7PM </td>
+            </tr>
+            <tr>
+                <th> THURSDAY </th>
+                <td> 11AM to 7PM </td>
+            </tr>
+            <tr>
+                <th> FRIDAY </th>
+                <td> 11AM to 7PM </td>
+            </tr>
+            <tr>
+                <th> SATURDAY </th>
+                <td> 11AM to 7PM </td>
+            </tr>
+            <tr>
+                <th> SUNDAY </th>
+                <td> 12PM to 5PM </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- highcharts -->
+    <div class="grid-item itemF">
+        <h3> BUSIEST HOURS </h3>
+        <p> Hover over the graph to see specific numbers. </p>
+        <div id = "container-graph"></div>
+    </div>
+
+    <!-- contact form -->
+    <!-- name attributes were altered after user testing -->
+    <div class="grid-item itemG">
+        <h3> CONTACT FORM </h3>
+        <p> Please use this form to reach out or receive updates! </p>
+
+        <!-- validation and drafting email upon submission -->
+        <form onsubmit = "return validate()" method="POST" enctype="text/plain" action="mailto:100teacups@gmail.com">
+            <fieldset> 
+                <legend> PERSONAL INFORMATION </legend>
+
+                <label for= "name"> Name (required): </label><br>
+                <input type = "text" id = "name" name = "name" value = "Your name" minlength = "5" maxlength = "50"><br><br>
+
+                <label for="email"> Email (required): </label><br>
+                <input type = "email" id = "email" name = "email" value = "abc@defg.com" minlength = "5" maxlength = "50"><br><br>
+
+                <label for= "zipcode"> Zip Code: </label><br>
+                <input type = "text" id = "zipcode" name = "zipcode" value = "00000" minlength = "5" maxlength = "5">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> OTHER </legend>
+                <label for="mailing"> Please indicate if you'd like to join our mailing list. </label><br>
+                <input type="radio" id="mailing" name="mailing">
+                <label for="mailing">Yes, please add me!</label><br><br>
+
+                <label for="coupons"> Please indicate if you'd like to subscribe to our weekly coupon flyer. </label><br>
+                <input type="radio" id="coupons" name="coupons">
+                <label for="coupons">Yes, please add me!</label><br><br>
+
+                <label for="message"> Would you like to send a message? </label><br>
+                <textarea name="message" rows="10" cols="50" maxlength = "1000">
+                </textarea>
+            </fieldset>
+            <br>
+            <input type= "image" name = "submit" src = "images/submit.png" alt = "Submit"> 
+        </form>
+    </div>
+
+    </div>
+
+    <!-- footer for personal credits -->
+    <footer>
+        &copy; KEVIN LIN <br/>
+        <a href = "mailto:linkevin@cmu.edu"><img src = "images/email.png" 
+            alt = "Email Icon" class = "icon"></a>
+        <a href = "https://www.linkedin.com/in/lin-k/" target = "_blank"> <img
+            src = "images/linkedin.jpg" alt = "LinkedIn Logo" class = "icon"/> </a>
+        <a href = "https://github.com/lin-kevin" target = "_blank"> <img
+            src = "images/github.png" alt = "GitHub Logo" class = "icon"/> </a>
+    </footer>
+
+</body>
+
+</html>
