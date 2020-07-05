@@ -5,7 +5,7 @@ Frontend development project for small local tea shop in Pittsburgh. Includes or
 ## Images 
 Images of each page can be found in the "webpages" folder. The interface is not final, as filler text was provided and used throughout.  
 
-![Home](/webpages/home.png | width=48)
+![Home | width=20%](/webpages/home.png)
 ![About](/webpages/about.png) 
 ![Menu](/webpages/menu.png)
 ![Contact](/webpages/contact.png)
