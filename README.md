@@ -3,11 +3,10 @@
 Frontend development project for small local tea shop in Pittsburgh. Includes original CSS template and various interactive features from the JQuery, Lightbox, and Highcharts JavaScript libraries. 
 
 ## Images 
-Images of each page can be found in the "webpages" folder. The interface is not final, as filler text was provided and used throughout.  
+Full-sized images of each page can be found in the "webpages" folder. The interface is not final, as filler text was provided and used throughout.  
 
-<img name="home" src="/webpages/home.png" width=20%>
-![Home | width=20%](/webpages/home.png)
-![About](/webpages/about.png) 
-![Menu](/webpages/menu.png)
-![Contact](/webpages/contact.png)
+<img name="home" src="/webpages/home.png" width=25%>
+<img name="about" src="/webpages/about.png" width=25%>
+<img name="menu" src="/webpages/menu.png" width=25%>
+<img name="contact" src="/webpages/contact.png" width=25%>
 
